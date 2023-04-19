@@ -1,0 +1,130 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.dark{
+    color: white;
+    background-color: black;
+}
+
+.white{
+    color: black;
+    background-color: white;
+}
+
+.mode-dark{
+    color: black;
+}
+
+.mode-white{
+    color: white;
+}
+
+@font-face {
+    font-family: titulo;
+    src: url(../fontes/titulo.ttf);
+}
+
+@font-face {
+    font-family: texto;
+    src: url(../fontes/texto.ttf);
+}
+
+#header{
+    padding: 32px;
+}
+
+#header h1 {
+    text-align: center;
+    font-family: "titulo";
+}
+
+.sinopse{
+    font-family: "texto";
+    text-align: center;
+    padding: 10px 30px;
+}
+
+
+#header img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 50px;
+    width: 70%;
+    height: 40%;
+}
+
+.button {
+    border: none;
+    border-radius: 50px;
+    background-color: #f5823b;
+    font-family: 'texto';
+    text-align: center;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width:  200px;
+    height: 48px;
+}
+
+.button > p{
+    margin-top: 10px;
+    font-size: 16px;
+    color: white;
+}
+
+.button-text{
+    font-size: 12px;
+    padding-left: 10px; 
+    padding-top: 5px;
+    font-style: normal;
+    font-family: "texto";
+    text-align: center;
+}
+
+.container-config{
+    display: flex !important;
+    align-items: center;
+}
+
+.config{
+    cursor: pointer;
+    background-color: transparent; 
+    border: none;
+}
+
+.config-icon{
+    font-size: 24px;
+    background-color: transparent; 
+}
+
+@media only screen and (max-width: 375px) {
+    .sinopse{
+        padding: 10px 5px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    #header h1{
+        font-size: 39px;
+    }
+
+    #header p{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #header img{
+        width:90% ;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    .config-icon{
+        font-size: 28px;
+    }
+}

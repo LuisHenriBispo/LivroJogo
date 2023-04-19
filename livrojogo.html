@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Livro Jogo</title>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible"content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/livrojogo.css" rel="stylesheet">
+        <link href="css/visibilidade.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">  
+    </head>
+
+    <body class="dark" id="mode-toggle">
+        <script src="js/livrojogo.js"></script>
+
+        <header id="header" class="home">
+            <div class="container-config">
+                <p class="button-text">Modos: </p>
+                <button class="config" type="button" onclick="changeModeWhite()">
+                    <i id="icon-color" class="bi bi-sun-fill config-icon mode-white">
+                        <!-- <span class="button-text">Habilitar modo</span> -->
+                    </i>
+                </button>
+                
+                <button class="config" type="button" onclick="changeModeDark()">
+                    <i id="icon-color2" class="bi bi-moon-stars-fill config-icon mode-white">
+                        <!-- <span class="button-text">Habilitar modo</span> -->
+                    </i>
+                </button>
+            </div>
+
+            <!-- <button class="config" type="button" onclick="changeMode()">
+                <i id="icon-color" class="bi bi-gear-fill config-icon mode-white">
+                    <span class="button-text">Habilitar modo</span>
+                </i>
+            </button> -->
+            
+            <img src="imagem/fundo.png"/>
+            <h1>Fugindo do Passado</h1>
+            <p class="sinopse">
+                Fugindo do Passado é um jogo de escolhas interativo que segue a história de duas irmãs que moram com seu avô em uma pequena cidade no Canadá. Depois que sua mãe as abandonou quando eram jovens, o avô
+            delas se tornou o único responsável por cuidar delas. No entanto, o avô adoeceu com câncer e, infelizmente, morreu. Mas as irmãs começam a desconfiar de que há algo mais sombrio envolvido em sua morte, pois a 
+            polícia está investigando seu falecimento.
+            </p>
+
+            <button class="button" type="button" id="button-color"><p>JOGAR</p></button>
+        </header>
+    </body>
+</html>
